@@ -199,3 +199,63 @@ main {
     .add-to-cart:hover {
       background-color: #d85c16;
     }
+
+
+ .plants-lover-section {
+  min-width: 1140px;
+  height: 550px;
+  display: flex;
+  margin-top: 40px;
+  gap: 70px;
+  align-items: center;
+}
+
+.left-side {
+  position: relative; /* Needed for absolute badge */
+  flex: 1;
+  height: 340px;
+  min-width: 50%;
+  border-radius: 10px;
+  overflow:;
+}
+
+.bg-image {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(70%); /* optional for dark overlay */
+}
+
+.badge {
+  position: absolute;
+  top: -100px;
+  left: 96%;
+  transform: translateX(-50%);
+  width: 250px;
+  z-index: 10;
+}
+
+.right-side {
+  flex: 1;
+}
+
+.right-side h2 {
+  margin-top: 240px;
+  font-weight: bold;
+  font-size: 50px;
+
+}
+
+.right-side ul {
+  padding-left: 20px;
+}
+
+.right-side li {
+  margin: 3px;
+  padding: 3px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 1.7rem;
+  color: #333;
+}
