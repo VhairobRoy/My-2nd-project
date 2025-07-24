@@ -1,0 +1,139 @@
+ /* Base setup */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9ff;
+      color: #333;
+    }
+
+    /* Container for consistent alignment */
+    .container {
+      max-width: 1140px;
+      padding: 0 40px;
+      margin: 0 auto;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #b1b1c0;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a.active,
+    .nav-links a:hover {
+      color: #1a1a2e;
+      font-weight: bold;
+    }
+
+    .cart {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .cart-icon {
+      font-size: 20px;
+    }
+
+    /* Banner section */
+    .banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 0;
+      gap: 40px;
+    }
+
+    .banner-text {
+      flex: 1;
+    }
+
+    .banner-text h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .bold {
+      font-weight: 700;
+      color: #000;
+    }
+
+    .highlight {
+      color: #e65c00;
+      font-weight: 700;
+    }
+
+    .banner-text p {
+      font-size: 16px;
+      color: #555;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+
+    .banner-image {
+      flex: 1;
+      text-align: right;
+    }
+
+    .banner-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .banner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .banner-image {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .nav-right {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+ 
