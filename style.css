@@ -160,7 +160,6 @@ main {
     .product-card {
       text-align: center;
       background-color: #fff;
-      padding: 10px;
       border: 1px solid #ddd;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -244,10 +243,12 @@ main {
   margin-top: 240px;
   font-weight: bold;
   font-size: 50px;
+  
 
 }
 
 .right-side ul {
+  font-size: 20;
   padding-left: 20px;
 }
 
@@ -255,7 +256,7 @@ main {
   margin: 3px;
   padding: 3px;
   margin-bottom: 25px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.7rem;
   color: #333;
 }
@@ -270,7 +271,7 @@ main {
 .deal h2 {
       font-size: 50px;
       margin-bottom: 10px;
-      c
+    
     }
 
     .deal h2 span {
@@ -348,7 +349,6 @@ main {
     }
 
     .overlay button {
-
       margin-top: 12px;
       padding: 10px 20px;
       font-size: 13px;
@@ -357,7 +357,7 @@ main {
       border: none;
       cursor: pointer;
       transition: background 0.3s ease;
-      border-bottom: inset #fff;
+      border-bottom: solid #fff 2px;
       line-height: 0;
     }
 
@@ -367,6 +367,117 @@ main {
     }
 
 
+     .join-section {
+      background-image: url(B12A02-Responsive-Flowers/assets/news-letter-bg.png); /* Replace with your own image URL */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      padding: 20px;
+    }
+
+    .content h1 {
+      font-size: 2.8em;
+      margin-bottom: 20px;
+    }
+
+    .subscribe-form {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .subscribe-form input {
+      padding: 15px;
+      width: 70%;
+      max-width: 400px;
+      border: none;
+      outline: none;
+      font-size: 1em;
+    }
+
+    .subscribe-form button {
+      padding: 15px 25px;
+      background-color: #f2542d;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .subscribe-form button:hover {
+      background-color: #d8431a;
+    }
+
+
+     .footer {
+      background-color: #f8f9fc;
+      padding: 50px 80px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer .logo-section {
+      max-width: 300px;
+    }
+
+    .footer .logo-section img {
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .footer .logo-section p {
+      color: #555;
+      font-size: 20px;
+    }
+
+    .footer .footer-links {
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .footer .link-column {
+      line-height:30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer .link-column a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .footer .link-column a:hover {
+      color: #f2542d;
+    }
+
+    .footer .social-icons {
+      display: flex;
+      gap:30px;
+      align-items: flex-start;
+    }
+
+    .footer .social-icons a img {
+      width: 28px;
+      height: 28px;
+    }
 
 
 
@@ -379,10 +490,53 @@ main {
 
 
 
-     @media (max-width: 768px) {
+@media (max-width: 768px) {
+
+      .plants-lover-section {
+       display: inline-block;
+      }
+        
+         .nav-links {
+          display: none;
+         }
+
+         .right-side h2{
+          font-size: 30px;
+         }
+
+      .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+      .badge{
+        display: none;
+      }
       .deal-content {
         flex-direction: column;
       }
+
+      .banner {
+    flex-direction: column;
+
+    .banner-image {
+    order: 1; 
+  }
+
+  .banner-text {
+    order: 2;
+    width: 100%; 
+  }
+
+  .banner-text h1{
+    font-size: 30px;
+  }
+
+      .deal h2 {
+        margin-top: -30px;
+      font-size: 30px;
+    
+    }
 
       .left-deals, .right-deal {
         flex: 1 1 100%;
@@ -392,6 +546,65 @@ main {
       }
 
       .right-deal .deal-card {
-        height: 240px !important;
+        height: 240px 
       }
+
+    .footer-links {
+    flex-direction: column; /* Keeping the vertical layout */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .link-column {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .link-column a {
+    text-align: center;
+    font-size: 14px;
+  }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    }
+
+
+
